@@ -1,29 +1,43 @@
-Overview
+# Genome Pattern Search
 
-The Genome Analysis Toolkit is a Python-based application designed for analyzing DNA sequences. It offers functionalities to compute reverse complements of k-mer patterns, count occurrences of k-mer patterns in a given genome, and find the most frequent k-mer patterns. This toolkit is useful for researchers and bioinformaticians working with genomic data.
+This project allows you to search for occurrences of a given DNA pattern and its reverse complement in a genome sequence. The program counts how many times a specific pattern or its reverse complement appears in the genome.
 
-Overview
+## Features
 
-The Genome Analysis Toolkit is a Python-based application designed for analyzing DNA sequences. It offers functionalities to compute reverse complements of k-mer patterns, count occurrences of k-mer patterns in a given genome, and find the most frequent k-mer patterns. This toolkit is useful for researchers and bioinformaticians working with genomic data.
+- **Reverse Complement Calculation**: The program calculates the reverse complement of a DNA sequence. For example, the reverse complement of `"ACTAT"` is `"TATCA"`.
+- **Pattern Search**: It searches for both the original pattern and its reverse complement within a given genome sequence.
+- **Case Handling**: Handles matching between the given genome and the patterns of interest.
 
-Features
+## Example
+Given the genome sequence:
+   ```bash
+   ACAACTATGCATACTATCGGGAACTATCCTATAGT
+   ```
 
-Compute Reverse Complement: Input a k-mer pattern and get its reverse complement.
-Count k-mer Patterns: Count how many times a specified k-mer pattern (or its complement) appears in a given genome.
-Find Most Frequent k-mer Patterns: Identify the k-mer patterns that appear most frequently in the genome.
-Requirements
+And the input pattern :
+  ```bash
+  ACTAT
+   ```
 
-Python 3.x
-No additional libraries required
-Usage
+The output will be :
+  ```bash
+   3
+   ```
 
-Error Handling
+This means the pattern "ACTAT" and its reverse complement "TATCA" are found a total of 3 times in the genome sequence.
 
-If the specified genome file is not found, the program will notify the user and prompt for the file name again.
-Contribution
+### Requirements
+No external dependencies are required for this project. You only need a Python interpreter.
 
-Feel free to fork the repository, create pull requests, and report issues. Contributions are welcome!
+### Running the Program
 
-License
+1. Clone or download the project.
+2. Open a terminal and navigate to the project directory.
+3. Run the script using Python.
 
-This project is open-source and available under the MIT License.
+   ```bash
+   python genome_pattern_search.py
+   ```
+
+# License
+This project is open source and free to use
